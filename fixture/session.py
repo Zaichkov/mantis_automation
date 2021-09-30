@@ -29,7 +29,7 @@ class SessionHelper:
     def logout(self):
         wd = self.app.wd
         wd.find_element_by_css_selector('span.user-info').click()
-        wd.find_element_by_css_selector('a[href="/mantisbt-2.25.2/logout_page.php"]').click()
+        wd.find_element_by_css_selector('a[href$="/logout_page.php"]').click()
 
     def ensure_logout(self):
         if self.is_logged_in():

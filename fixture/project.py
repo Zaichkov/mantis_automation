@@ -8,7 +8,7 @@ class ProjectHelper:
 
     def open_manage_proj_page(self):
         wd = self.app.wd
-        wd.get('http://localhost/mantisbt-2.25.2/manage_proj_page.php')
+        wd.get(f'{self.app.base_url}/manage_proj_page.php')
 
     def open_proj_create_page(self):
         wd = self.app.wd
